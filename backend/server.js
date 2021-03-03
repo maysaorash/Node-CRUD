@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
 require("dotenv").config({path:'.env'});
-const app = require("./app");
- 
 
+ require('./Models/Posts')
+ const app = require("./app");
+ 
   mongoose.connect(process.env.DATABASE,
   {
       useUnifiedTopology:true,
